@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>INTELLOG</title>
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<!-- jquery cdn -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+</head>
+<body>
+
+			<div class="col-md-12 navbar"> 
+				<img class="logo" src="logo.png">	 
+				<ul class="nav">
+					<li class="nav-item"><a href="#" class="nav-link">Acceuil</a></li>
+					<li class="nav-item active"><a href="#" class="nav-link">Achat</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Vente</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Location</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Créer compte</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Connexion</a></li>					
+				</ul>
+			</div>
+            <div class="wrapper">
+              <div>
+                <span class="detail">Ville</span>
+                <select name="ville" id="ville-select" class="selectcase">
+                  <option value="allville">Toutes les villes</option>
+                  <option value="agadir">Agadir</option>
+                  <option value="ahfir">Ahfir</option>
+                  <option value="al Hoceïma">Al Hoceïma</option>
+                  <option value="aoufous">Aoufous</option>
+                  <option value="arfoud">Arfoud</option>
+                  <option value="assilah">Assilah</option>
+                  <option value="azemmour">Azemmour</option>
+                  <option value="azilal">Azilal</option>
+                  <option value="azrou">Azrou</option>
+                  <option value="bejaad">Bejaad</option>
+                  <option value="ben Guerir">Ben Guerir</option>
+                  <option value="beni Mellal">Beni Mellal</option>
+                  <option value="berkane">Berkane</option>
+                  <option value="berrechid">Berrechid</option>
+                  <option value="bouskoura">Bouskoura</option>
+                  <option value="bouznika">Bouznika</option>
+                  <option value="casablanca">Casablanca</option>
+                  <option value="chefchaouen">Chefchaouen</option>
+                  <option value="chichaoua">Chichaoua</option>
+                  <option value="dakhla">Dakhla</option>
+                  <option value="el Hajeb">El Hajeb</option>
+                  <option value="el Jadida">El Jadida</option>
+                  <option value="el Kelaa des Sraghna">El Kelaa des Sraghna</option>
+                  <option value="errachidia">Errachidia</option>
+                  <option value="er-Rich">Er-Rich</option>
+                  <option value="essaouira">Essaouira</option>
+                  <option value="es-Semara">Es-Semara</option>
+                  <option value="fès">Fès</option>
+                  <option value="figuig">Figuig</option>
+                  <option value="fnideq">Fnideq</option>
+                  <option value="fquih Ben Salah">Fquih Ben Salah</option>
+                  <option value="guelmim">Guelmim</option>
+                  <option value="guercif">Guercif</option>
+                  <option value="ifrane">Ifrane</option>
+                  <option value="imzouren">Imzouren</option>
+                  <option value="inezgane">Inezgane</option>
+                  <option value="jerada">Jerada</option>
+                  <option value="jorf El Melha">Jorf El Melha</option>
+                  <option value="kalaat M'Gouna">Kalaat M'Gouna</option>
+                  <option value="kasba Tadla">Kasba Tadla</option>
+                  <option value="kénitra">Kénitra</option>
+                  <option value="khémisset">Khémisset</option>
+                  <option value="khénifra">Khénifra</option>
+                  <option value="khouribga">Khouribga</option>
+                  <option value="ksar El Kébir">Ksar El Kébir</option>
+                  <option value="laattaouia">Laattaouia</option>
+                  <option value="laayoune">Laayoune</option>
+                  <option value="lahraouyine">Lahraouyine</option>
+                  <option value="larache">Larache</option>
+                  <option value="lqliaa">Lqliaa</option>
+                  <option value="marrakech">Marrakech</option>
+                  <option value="martil">Martil</option>
+                  <option value="m'Diq">M'Diq</option>
+                  <option value="meknès">Meknès</option>
+                  <option value="midar">Midar</option>
+                  <option value="midelt">Midelt</option>
+                  <option value="nador">Nador</option>
+                  <option value="oualidia">Oualidia</option>
+                  <option value="ouarzazate">Ouarzazate</option>
+                  <option value="oued Zem">Oued Zem</option>
+                  <option value="ouezzane">Ouezzane</option>
+                  <option value="oujda">Oujda</option>
+                  <option value="oulad Teïma">Oulad Teïma</option>
+                  <option value="rabat">Rabat</option>
+                  <option value="safi">Safi</option>
+                  <option value="salé">Salé</option>
+                  <option value="sefrou">Sefrou</option>
+                  <option value="settat">Settat</option>
+                  <option value="sidi Allal El Bahraoui">Sidi Allal El Bahraoui</option>
+                  <option value="sidi Bennour">Sidi Bennour</option>
+                  <option value="sidi Bouknadel">Sidi Bouknadel</option>
+                  <option value="sidi Kacem">Sidi Kacem</option>
+                  <option value="sidi Slimane">Sidi Slimane</option>
+                  <option value="skhirate">Skhirate</option>
+                  <option value="souk El Arbaâ">Souk El Arbaâ</option>
+                  <option value="souk Sebt Oulad Nemma">Souk Sebt Oulad Nemma</option>
+                  <option value="tanger">Tanger</option>
+                  <option value="tan-Tan">Tan-Tan</option>
+                  <option value="taounate">Taounate</option>
+                  <option value="taourirt">Taourirt</option>
+                  <option value="taroudant">Taroudant</option>
+                  <option value="taza">Taza</option>
+                  <option value="témara">Témara</option>
+                  <option value="tétouan">Tétouan</option>
+                  <option value="tiflet">Tiflet</option>
+                  <option value="tinghir">Tinghir</option>
+                  <option value="tiznit">Tiznit</option>
+                  <option value="youssoufia">Youssoufia</option>
+                  <option value="zagora">Zagora</option>
+                </select>
+              </div>   
+                <div>
+                  <span class="detail">Bien immobilier </span>
+                  <select name="bien" id="bien-select" class="selectcase">
+                    <option value="alltype">Tous les types</option>
+                    <option value="maison">Maison</option>
+                    <option value="appartement">Appartement</option>
+                    <option value="commerce">Bureau ou Local commercial</option>
+                    <option value="villa">Villa</option>
+                    <option value="riad">Riad</option>
+                    <option value="terrain">Terrain</option>
+                  </select>
+                </div>
+                <div>
+                  <span class="detail">Nombre de pièces</span>
+                  <input type="text" placeholder=" ">
+                </div>
+                <div>
+                  <span class="detail">Surface</span>
+                  <input type="text" placeholder=" ">
+                </div>
+                <div>
+                  <span class="detail">Prix min</span>
+                  <input type="text" placeholder=" ">
+                </div>
+                <div>
+                  <span class="detail">Prix max</span>
+                  <input type="text" placeholder=" ">
+                </div>
+                <input type="submit" value="Chercher">
+            </div>
+            <div class="wrapper3">
+              <img class="image" src="maison.png" alt="">
+              <img class="image" src="maison.png" alt="">
+              <img class="image" src="maison.png" alt="">
+              <img class="image" src="maison.png" alt="">
+              <img class="image" src="maison.png" alt="">
+            </div>
+
+            
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"></div>
+	
+	<div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Achat</a></li>
+                            <li><a href="#">Vente</a></li>
+                            <li><a href="#">Location</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Disponibles
+								par téléphone & email direc</a></li>
+                            <li><a href="#">  100% spécialisés
+								dans le secteur immobilier
+								 </a></li>
+                            <li><a href="#">Service commercial
+								gère vos demandes sous 24h
+								</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>INTELLOG</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">INTELLOG © 2021</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
