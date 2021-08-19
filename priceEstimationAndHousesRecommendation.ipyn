@@ -863,7 +863,7 @@
    ],
    "source": [
     "mean_sq_err2 = metrics.mean_squared_error(y2_test , predection2) \n",
-    "RMSE2 = np.sqrt(mean_sq_err2) \n",
+    "RMSE2 = np.sqrt(mean_sq_err2)\n",
     "RMSE2"
    ]
   },
